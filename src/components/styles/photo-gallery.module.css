@@ -1,0 +1,22 @@
+.photo_gallery {
+   display: block;
+   overflow: hidden;
+   margin-bottom: 25px;
+}
+
+.photo_gallery_col {
+   padding-right: 10px;
+   width: 50%;
+   display: inline-block;
+   float: left;
+}
+
+.photo_gallery_item {
+   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+   .photo_gallery_col {
+      width: 100%;
+   }
+}

@@ -1,0 +1,19 @@
+.vintage_quote {
+   padding-left: 30px;
+}
+
+.vintage_quote p {
+   font-family: 'Volkhov', serif;
+}
+
+.vintage_quote p:first-child {
+   font-size: 12pt;
+   padding-bottom: 0;
+}
+
+.vintage_quote p:nth-child(2) {
+   text-transform: uppercase;
+   font-size: 10pt;
+   line-height: 0;
+   color: #ab1010;
+}

@@ -1,0 +1,55 @@
+header {
+   display: block;
+   width: 100%;
+   overflow: hidden;
+}
+
+header #header-content {
+   margin: 0 auto;
+   max-width: 960px;
+   width: 100%;
+   padding: 1.45rem 1.0875rem;
+}
+
+header #home-icon, header #title {
+   display: inline-block;
+}
+
+header #home-icon {
+   display: inline-block;
+   float: left;
+   text-align: left;
+   width: 33.33333%;
+   height: 30px;
+}
+
+header #home-icon img {
+   width: 20px;
+}
+
+header #header-title {
+   float: left;
+   text-align: left;
+   width: 33.33333%;
+}
+
+header #header-title p {
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+
+/*==============*/
+/*=== Guides ===*/
+/*==============*/
+
+.article h1 {
+   font-family: 'Open Sans', sans-serif;
+   text-align: center;
+   text-transform: uppercase;
+   padding: 20px 0;
+}
+
+.article h2 {
+   font-size: 16pt;
+}
