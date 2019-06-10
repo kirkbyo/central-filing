@@ -1,20 +1,103 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import FancyHeading from '../components/fancy-heading'
+import Project from '../components/project'
+import EmojiHeadingStack from '../components/emoji-heading-stack'
+import { Row, Col } from 'react-simple-flex-grid';
+import { Twitter, Github, LinkedIn } from '../components/social-icons'
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/guides/montreal">Go to page 2</Link>
+  <Layout showHeader={false}>
+    <FancyHeading>
+      <h1>Ozzie Kirkby</h1>
+    </FancyHeading>
+    <p className="subheading">About me</p>
+    <p>Hey there, I’m Ozzie 👋 I’m a Mechanical Engineering student at Queen’s University. I’ve interned at <a className="lk-green" target="_bank" href="https://www.shopify.com/">Shopify</a> for both iOS and Software Engineering. At the moment, I am interested in Mechatronics, iOS development, and backend services. Otherwise, you’ll find me <a className="lk-blue" href="#">running</a> or <a className="lk-blue" href="#">reading</a>.</p>
+    <a href="#">Resume</a>
+    <Twitter height={`20px`} /><Github height={`20px` /><LinkedIn height={`20px`} />
+    <br />
+    <br />
+    <br />
+    <p className="subheading">Projects</p>
+    <p className="caption">Hackathon projects can be found on <a href="#">Devpost</a></p>
+    <br />
+    <Row>
+      <Col span={6}>
+        <Project
+          title="Outflow"
+          description="Manage the complexity of reacuring subscriptions. Instantly see where your money is going."
+          apple="https://itunes.apple.com/us/app/outflow-subscription-manager/id975011878"
+          github="https://github.com/outflowapp"
+        />
+      </Col>
+      <Col span={6}>
+        <Project
+          title="BitLeague"
+          description="Developed apart of a team at QHacks19. Create, browse, and vote on community recreations of Bitmojis"
+          github="https://github.com/schmidyy/BitLeague"
+        />
+      </Col>
+    </Row>
+    <Row>
+      <Col span={6}>
+        <Project
+          title="Polydoxical"
+          description="WWDC 17 Playground Submission. Interactive playground to experiment with roulettes and polygons"
+          github="https://github.com/kirkbyo/Polydoxical"
+        />
+      </Col>
+      <Col span={6}>
+        <Project
+          title="Dimensional"
+          description="WWDC 18 Playground Submission. An experiment to naturally combine units of measurement with Swift code to ensure dimensionally homogenous calculations."
+          github="https://github.com/kirkbyo/WWDC18"
+        />
+      </Col>
+    </Row>
+    <br/>
+    <p className="subheading">Central Filing</p>
+    <p className="caption">A filing cabinet for my thoughts.</p>
+    <br/>
+    <Row>
+      <Col span={4}>
+        <EmojiHeadingStack
+          title="Books"
+          description="My notes on books that I have read"
+          emoji="📚"
+          link=""
+        />
+      </Col>
+      <Col span={4}>
+        <EmojiHeadingStack
+          title="Writings"
+          description="A collection a words organized into sentences"
+          emoji="📝"
+          link=""
+        />
+      </Col>
+      <Col span={4}>
+        <EmojiHeadingStack
+          title="Guides"
+          description="A breakdown of places I have lived / traveled"
+          emoji="🗺"
+          link=""
+        />
+      </Col>
+    </Row>
+    <Row>
+      <Col span={4}>
+        <EmojiHeadingStack
+          title="Quotes"
+          description="Quotes that I have enjoyed"
+          emoji="💬"
+          link=""
+        />
+      </Col>
+    </Row>
+    <footer>
+      <p>© { new Date().getFullYear() } Ozzie Kirkby</p>
+    </footer>
   </Layout>
 )
 

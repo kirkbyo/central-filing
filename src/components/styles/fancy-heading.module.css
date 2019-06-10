@@ -1,0 +1,10 @@
+.fancy_heading {
+  padding: 50px 0 0 0;
+  text-align: center;
+}
+
+.fancy_heading h1 {
+  font-family: georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}

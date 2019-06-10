@@ -6,7 +6,7 @@ import VintageQuote from '../../components/vintage-quote'
 
 import { PhotoGallery, PhotoGalleryCol, PhotoGalleryItem } from '../../components/photo-gallery'
 
-const SecondPage = () => (
+const Montreal = () => (
   <Layout className="article">
    <SEO title="Montréal" />
    <h1>Montréal</h1>
@@ -28,4 +28,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default Montreal

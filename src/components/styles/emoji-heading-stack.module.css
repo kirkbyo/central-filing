@@ -1,0 +1,28 @@
+.stack {
+  margin: 5px;
+  padding: 2px 5px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.emoji {
+  font-size: 20pt;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 4pt;
+  margin-bottom: 0;
+}
+
+.stack_title {
+  margin: 0;
+  font-size: 12pt;
+  font-weight: 600;
+  line-height: 14pt;
+}
+
+.stack_desc {
+  font-size: 10pt;
+  line-height: 13pt;
+  margin: 0;
+  font-style: italic;
+}
