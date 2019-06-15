@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../components/Layout"
+import DefaultLayout from "../components/default-layout"
 import FancyHeading from '../components/fancy-heading'
 import Project from '../components/project'
 import EmojiHeadingStack from '../components/emoji-heading-stack'
@@ -8,14 +8,13 @@ import { Row, Col } from 'react-simple-flex-grid';
 import { Twitter, Github, LinkedIn } from '../components/social-icons'
 
 const IndexPage = () => (
-  <Layout showHeader={false}>
+  <DefaultLayout showHeader={false}>
     <FancyHeading>
       <h1>Ozzie Kirkby</h1>
     </FancyHeading>
     <p className="subheading">About me</p>
     <p>Hey there, I’m Ozzie 👋 I’m a Mechanical Engineering student at Queen’s University. I’ve interned at <a className="lk-green" target="_bank" href="https://www.shopify.com/">Shopify</a> for both iOS and Software Engineering. At the moment, I am interested in Mechatronics, iOS development, and backend services. Otherwise, you’ll find me <a className="lk-blue" href="#">running</a> or <a className="lk-blue" href="#">reading</a>.</p>
     <a href="#">Resume</a>
-    <Twitter height={`20px`} /><Github height={`20px` /><LinkedIn height={`20px`} />
     <br />
     <br />
     <br />
@@ -96,9 +95,14 @@ const IndexPage = () => (
       </Col>
     </Row>
     <footer>
+      <div className="inline-stack social-icons">
+        <Twitter height={`20px`} url="https://twitter.com/kirkbyo_" />
+        <Github height={`20px`} url="https://github.com/kirkbyo"/>
+        <LinkedIn height={`20px`} url="https://ca.linkedin.com/in/kirkbyo"/>
+      </div>
       <p>© { new Date().getFullYear() } Ozzie Kirkby</p>
     </footer>
-  </Layout>
+  </DefaultLayout>
 )
 
 export default IndexPage

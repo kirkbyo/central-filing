@@ -6,7 +6,7 @@ import styles from "./styles/emoji-heading-stack.module.css"
 const EmojiHeadingStack = ({ title, description, emoji, link }) => (
    <Row className={ styles.stack }>
     <Col span={2}>
-      <p className={ styles.emoji }>{ emoji }</p>
+      <span className={ styles.emoji } role="img">{ emoji }</span>
     </Col>
     <Col span={10}>
       <p className={ styles.stack_title }>{ title }</p>
