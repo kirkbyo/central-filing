@@ -14,8 +14,8 @@ const Montreal = () => (
    <VintageQuote author="Centre d'histoire de Montréal">
    ‟Montreal is a living, dynamic entity, born from the encounter between a territory and a diversity of peoples. Like every city, it is in constant flux — never complete, always in the process of becoming. It bears the traces of those who came before: physical traces, reflected in the architecture and landscapes of its neighborhoods, and intangible traces, cast in lifestyles, languages and mentalities.”
    </VintageQuote>
-   <h2>Photo's</h2>
-   <h2>History</h2>
+   <h3>History</h3>
+   <h3>Photo's</h3>
    <StaticQuery
      query={photoGraph}
      render={data => (

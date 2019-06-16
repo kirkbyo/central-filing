@@ -1,0 +1,36 @@
+
+.container {
+  padding: 15px 10px;
+  border-radius: 5px;
+  -webkit-transition: background-color 2s; /* Safari prior 6.1 */
+  transition: background-color 2s;
+  cursor: pointer;
+}
+
+.container a {
+  color: black;
+}
+
+.container:hover {
+  background-color: #e6e7ea;
+}
+
+.container p {
+  margin-bottom: 0;
+}
+
+.author {
+  font-family: 'Volkhov', serif;
+  font-size: 10pt;
+  color: #ab1010;
+}
+
+.quote {
+}
+
+.link {
+}
+
+.link img {
+  margin-bottom: 0;
+}

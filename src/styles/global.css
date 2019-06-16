@@ -106,7 +106,19 @@ header #header-title p {
 }
 
 .article h2 {
+  font-family: 'Volkhov', serif;
+  font-size: 13pt;
+  line-height: 13pt;
+  font-weight: 400;
+  text-align: center;
+}
+
+.article h3 {
    font-size: 16pt;
+}
+
+.article h3 a {
+  color: black;
 }
 
 .lk-green { color: green; }

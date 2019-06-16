@@ -13,7 +13,7 @@ const IndexPage = () => (
       <h1>Ozzie Kirkby</h1>
     </FancyHeading>
     <p className="subheading">About me</p>
-    <p>Hey there, I’m Ozzie 👋 I’m a Mechanical Engineering student at Queen’s University. I’ve interned at <a className="lk-green" target="_bank" href="https://www.shopify.com/">Shopify</a> for both iOS and Software Engineering. At the moment, I am interested in Mechatronics, iOS development, and backend services. Otherwise, you’ll find me <a className="lk-blue" href="#">running</a> or <a className="lk-blue" href="#">reading</a>.</p>
+    <p>Hey there, I’m Ozzie <span role="img" aria-label="wave">👋</span> I’m a Mechanical Engineering student at Queen’s University. I’ve interned at <a className="lk-green" target="_bank" href="https://www.shopify.com/">Shopify</a> for both iOS and Software Engineering. At the moment, I am interested in Mechatronics, iOS development, and backend services. Otherwise, you’ll find me <a className="lk-blue" href="#">running</a> or <a className="lk-blue" href="#">reading</a>.</p>
     <a href="#">Resume</a>
     <br />
     <br />
@@ -22,7 +22,7 @@ const IndexPage = () => (
     <p className="caption">Hackathon projects can be found on <a href="#">Devpost</a></p>
     <br />
     <Row>
-      <Col span={6}>
+      <Col xs={12} sm={6}>
         <Project
           title="Outflow"
           description="Manage the complexity of reacuring subscriptions. Instantly see where your money is going."
@@ -30,7 +30,7 @@ const IndexPage = () => (
           github="https://github.com/outflowapp"
         />
       </Col>
-      <Col span={6}>
+      <Col xs={12} sm={6}>
         <Project
           title="BitLeague"
           description="Developed apart of a team at QHacks19. Create, browse, and vote on community recreations of Bitmojis"
@@ -39,14 +39,14 @@ const IndexPage = () => (
       </Col>
     </Row>
     <Row>
-      <Col span={6}>
+      <Col xs={12} sm={6}>
         <Project
           title="Polydoxical"
           description="WWDC 17 Playground Submission. Interactive playground to experiment with roulettes and polygons"
           github="https://github.com/kirkbyo/Polydoxical"
         />
       </Col>
-      <Col span={6}>
+      <Col xs={12} sm={6}>
         <Project
           title="Dimensional"
           description="WWDC 18 Playground Submission. An experiment to naturally combine units of measurement with Swift code to ensure dimensionally homogenous calculations."
@@ -59,7 +59,7 @@ const IndexPage = () => (
     <p className="caption">A filing cabinet for my thoughts.</p>
     <br/>
     <Row>
-      <Col span={4}>
+      <Col xs={12} sm={6} md={4}>
         <EmojiHeadingStack
           title="Books"
           description="My notes on books that I have read"
@@ -67,7 +67,7 @@ const IndexPage = () => (
           link=""
         />
       </Col>
-      <Col span={4}>
+      <Col xs={12} sm={6} md={4}>
         <EmojiHeadingStack
           title="Writings"
           description="A collection a words organized into sentences"
@@ -75,7 +75,7 @@ const IndexPage = () => (
           link=""
         />
       </Col>
-      <Col span={4}>
+      <Col xs={12} sm={6} md={4}>
         <EmojiHeadingStack
           title="Guides"
           description="A breakdown of places I have lived / traveled"
@@ -85,12 +85,12 @@ const IndexPage = () => (
       </Col>
     </Row>
     <Row>
-      <Col span={4}>
+      <Col xs={12} sm={6} md={4}>
         <EmojiHeadingStack
           title="Quotes"
           description="Quotes that I have enjoyed"
           emoji="💬"
-          link=""
+          link="quotes"
         />
       </Col>
     </Row>
