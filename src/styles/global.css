@@ -126,3 +126,7 @@ header #header-title p {
 
 .lk-blue { color: #090C9B }
 .lk-blue:visited { color: #090C9B }
+
+.books-summary-content li {
+    font-family: 'Open Sans', sans-serif;
+}

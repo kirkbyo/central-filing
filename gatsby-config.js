@@ -50,6 +50,14 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/pages/books`,
+        name: `markdown-books`,
+      },
+    },
+    `gatsby-transformer-remark`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

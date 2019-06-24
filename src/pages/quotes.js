@@ -8,7 +8,7 @@ import DefaultLayout from "../components/default-layout"
 import SEO from "../components/seo"
 import EmojiHeadingStack from '../components/emoji-heading-stack'
 import Quote from '../components/quote'
-import { Row, Col } from 'react-simple-flex-grid';
+import { Row, Col } from 'react-simple-flex-grid'
 
 const Quotes = () => (
   <DefaultLayout className="article">
