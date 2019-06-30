@@ -1,7 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import { Row, Col } from 'react-simple-flex-grid';
 import styles from "./styles/quote.module.css"
 
 const Quote = ({ author, children, id }) => (

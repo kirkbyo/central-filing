@@ -1,11 +1,8 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 
-import { chunk } from "../utils/array"
-
 import DefaultLayout from "../components/default-layout"
 import SEO from "../components/seo"
-import { Row, Col } from 'react-simple-flex-grid'
 
 const Guides = () => (
   <DefaultLayout className="article">
