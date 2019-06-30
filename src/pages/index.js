@@ -13,13 +13,13 @@ const IndexPage = () => (
       <h1>Ozzie Kirkby</h1>
     </FancyHeading>
     <p className="subheading">About me</p>
-    <p>Hey there, I’m Ozzie <span role="img" aria-label="wave">👋</span> I’m a Mechanical Engineering student at Queen’s University. I’ve interned at <a className="lk-green" target="_bank" href="https://www.shopify.com/">Shopify</a> for both iOS and Software Engineering. At the moment, I am interested in Mechatronics, iOS development, and backend services. Otherwise, you’ll find me <a className="lk-blue" href="#">running</a> or <a className="lk-blue" href="#">reading</a>.</p>
-    <a href="#">Resume</a>
+    <p>Hey there, I’m Ozzie <span role="img" aria-label="wave">👋</span> I’m a Mechanical Engineering student at Queen’s University. I’ve interned at <a className="lk-green" target="_bank" href="https://www.shopify.com/">Shopify</a> for both iOS and Software Engineering. At the moment, I am interested in Mechatronics, iOS development, and backend services. Otherwise, you’ll find me <a className="lk-blue" href="#">running</a> or <a className="lk-blue" href="books">reading</a>.</p>
+    <a href="resume.pdf">Resume</a>
     <br />
     <br />
     <br />
     <p className="subheading">Projects</p>
-    <p className="caption">Hackathon projects can be found on <a href="#">Devpost</a></p>
+    <p className="caption">Hackathon projects can be found on <a href="https://devpost.com/kirkbyo">Devpost</a></p>
     <br />
     <Row>
       <Col xs={12} sm={6}>
@@ -64,7 +64,7 @@ const IndexPage = () => (
           title="Books"
           description="My notes on books that I have read"
           emoji="📚"
-          link=""
+          link="books"
         />
       </Col>
       <Col xs={12} sm={6} md={4}>
@@ -72,7 +72,7 @@ const IndexPage = () => (
           title="Writings"
           description="A collection a words organized into sentences"
           emoji="📝"
-          link=""
+          link="blog"
         />
       </Col>
       <Col xs={12} sm={6} md={4}>
@@ -80,7 +80,7 @@ const IndexPage = () => (
           title="Guides"
           description="A breakdown of places I have lived / traveled"
           emoji="🗺"
-          link=""
+          link="guides"
         />
       </Col>
     </Row>
