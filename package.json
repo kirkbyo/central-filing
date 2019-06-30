@@ -1,5 +1,5 @@
 {
-  "name": "Central Filing",
+  "name": "ozzie-kirkby-personal-site",
   "private": true,
   "description": "Central Filing",
   "version": "0.1.0",
@@ -24,6 +24,7 @@
     "react-stack-grid": "^0.7.1"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "prettier": "^1.18.0"
   },
   "keywords": [
@@ -36,7 +37,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "node ./scripts/deploy-github"
   },
   "repository": {
     "type": "git",

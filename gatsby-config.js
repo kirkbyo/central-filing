@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Central Filing`,
-    description: `A place for my writings.`,
+    title: `Ozzie Kirkby - Central Filing`,
+    description: `Engineering Student`,
     author: `Ozzie Kirkby`,
   },
   plugins: [
