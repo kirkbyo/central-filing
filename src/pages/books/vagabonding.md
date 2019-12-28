@@ -1,6 +1,6 @@
 ---
 path: "/books/vagabonding"
-date: "2019-01-22"
+date: "2019-06-15"
 title: "Vagabonding"
 ---
 **Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel**
