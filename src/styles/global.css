@@ -94,6 +94,12 @@ header #header-title p {
   fill: #4d5ca0;
 }
 
+blockquote {
+  background-color: rgb(229, 229, 229);
+  margin: 8pt 0;
+  padding: 8pt;
+}
+
 /*==============*/
 /*=== Guides ===*/
 /*==============*/

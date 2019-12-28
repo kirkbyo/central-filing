@@ -10,14 +10,14 @@ const DefaultLayout = ({ children, className, showHeader }) => (
     query SiteTitleQuery {
       site {
         siteMetadata {
-          title
+          headerTitle
         }
       }
     }
   `}
   render={ data => (
     <>
-      { showHeader && <Header siteTitle={ data.site.siteMetadata.title } /> }
+      { showHeader && <Header siteTitle={ data.site.siteMetadata.headerTitle } /> }
       <div
         style={{
           margin: `0 auto`,

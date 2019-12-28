@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    headerTitle: `Central Filing`,
     title: `Ozzie Kirkby - Central Filing`,
     description: `Engineering Student`,
     author: `Ozzie Kirkby`,
