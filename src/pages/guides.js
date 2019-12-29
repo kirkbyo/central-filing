@@ -23,7 +23,8 @@ const Guides = () => (
 export default Guides
 
 function buildGuides(guides) {
-  return guides.map(item => <Link to={item.path}>{item.name}</Link>)
+  const inline_style = { 'display': 'block' }
+  return guides.map(item => <div style={inline_style}><Link to={item.path}>{item.name}</Link></div>)
 }
 
 const guidesQuery = graphql`
