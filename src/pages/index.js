@@ -84,16 +84,6 @@ const IndexPage = () => (
         />
       </Col>
     </Row>
-    <Row>
-      <Col xs={12} sm={6} md={4}>
-        <EmojiHeadingStack
-          title="Quotes"
-          description="Quotes that I have enjoyed"
-          emoji="💬"
-          link="quotes"
-        />
-      </Col>
-    </Row>
     <footer>
       <div className="inline-stack social-icons">
         <Twitter height={`20px`} url="https://twitter.com/kirkbyo_" />
