@@ -127,6 +127,9 @@ blockquote {
   color: black;
 }
 
+.lk-black { color: rgb(233, 87, 79); }
+.lk-black:visited { color: rgb(233, 87, 79); }
+
 .lk-green { color: green; }
 .lk-green:visited { color: green; }
 

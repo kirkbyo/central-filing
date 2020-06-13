@@ -13,7 +13,7 @@ const IndexPage = () => (
       <h1>Ozzie Kirkby</h1>
     </FancyHeading>
     <p className="subheading">About me</p>
-    <p>Hey there, I’m Ozzie <span role="img" aria-label="wave">👋</span> I’m a Mechanical Engineering student at Queen’s University. In the past, I’ve interned at <a className="lk-green" target="_bank" href="https://www.shopify.com/">Shopify</a> for both iOS and Software Engineering. Right now, I am interested in learning about Mechatronics, data, backend services, and iOS development. Otherwise, you’ll find me running or <a className="lk-blue" href="books">reading</a>.</p>
+    <p>Hey there, I’m Ozzie <span role="img" aria-label="wave">👋</span> I’m a Mechanical Engineering student at Queen’s University. In the past, I’ve interned at <a className="lk-green" target="_bank" href="https://www.shopify.com/">Shopify</a> for both iOS and Software Engineering. Right now, I am interested in learning data engineering, backend services, and product development. Otherwise, you’ll find me running, <a className="lk-blue" href="books">reading</a> or taking <a className="lk-black" href="https://unsplash.com/@ozziek">photos</a>.</p>
     <a href="resume.pdf">Resume</a>
     <br />
     <br />
