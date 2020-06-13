@@ -3,12 +3,14 @@ import React from "react"
 import DefaultLayout from "../components/default-layout"
 import FancyHeading from '../components/fancy-heading'
 import Project from '../components/project'
+import SEO from '../components/seo'
 import EmojiHeadingStack from '../components/emoji-heading-stack'
 import { Row, Col } from 'react-simple-flex-grid';
 import { Twitter, Github, LinkedIn } from '../components/social-icons'
 
 const IndexPage = () => (
   <DefaultLayout showHeader={false}>
+    <SEO title="Ozzie | Engineering Student"/>
     <FancyHeading>
       <h1>Ozzie Kirkby</h1>
     </FancyHeading>
