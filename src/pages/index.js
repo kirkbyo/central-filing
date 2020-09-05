@@ -25,9 +25,13 @@ const IndexPage = () => (
       <a className="lk-green" target="_bank" href="https://www.shopify.com/">
         Shopify
       </a>{" "}
-      for both iOS and Software Engineering. Right now, I am interested in
-      learning data engineering, backend services, and product development.
-      Otherwise, you’ll find me running,{" "}
+      and{" "}
+      <a className="lk-cb" target="_bank" href="https://www.coinbase.com/">
+        Coinbase
+      </a>{" "}
+      for Software Engineering. Right now, I am interested in learning data
+      engineering, backend services, and product development. Otherwise, you’ll
+      find me running,{" "}
       <a className="lk-blue" href="books">
         reading
       </a>{" "}
