@@ -4,12 +4,14 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header>
-   <div id="header-content">
+    <div id="header-content">
       <Link to="/" id="home-icon">
-         <img src={'/home-icon.svg'} alt="Home Icon" id="home-icon"/>
+        <img src={"/home-icon.svg"} alt="Home Icon" id="home-icon" />
       </Link>
-      <div id="header-title"><p>{siteTitle}</p></div>
-   </div>
+      <div id="header-title">
+        <p>{siteTitle}</p>
+      </div>
+    </div>
   </header>
 )
 
@@ -20,6 +22,5 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
-
 
 export default Header

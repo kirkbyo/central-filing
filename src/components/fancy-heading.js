@@ -3,9 +3,7 @@ import React from "react"
 import styles from "./styles/fancy-heading.module.css"
 
 const FancyHeading = ({ children }) => (
-  <header className={ styles.fancy_heading }>
-    { children }
-  </header>
+  <header className={styles.fancy_heading}>{children}</header>
 )
 
 FancyHeading.propTypes = {
@@ -15,6 +13,5 @@ FancyHeading.propTypes = {
 FancyHeading.defaultProps = {
   children: <div></div>,
 }
-
 
 export default FancyHeading

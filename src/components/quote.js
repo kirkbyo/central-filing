@@ -4,22 +4,23 @@ import React from "react"
 import styles from "./styles/quote.module.css"
 
 const Quote = ({ author, children, id }) => (
-   <div className={ styles.container }>
+  <div className={styles.container}>
     <a href={"#" + id}>
-      <p id={id} className={ styles.quote }>{ children }</p>
-      {author && <p className={ styles.author }>{ author }</p>}
+      <p id={id} className={styles.quote}>
+        {children}
+      </p>
+      {author && <p className={styles.author}>{author}</p>}
     </a>
-   </div>
+  </div>
 )
 
 Quote.propTypes = {
-  author:  PropTypes.string,
-  link: PropTypes.string
+  author: PropTypes.string,
+  link: PropTypes.string,
 }
 
 Quote.defaultProps = {
-  author: ``
+  author: ``,
 }
-
 
 export default Quote

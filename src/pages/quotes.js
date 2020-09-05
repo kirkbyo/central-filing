@@ -6,9 +6,9 @@ import { idify } from "../utils/util"
 
 import DefaultLayout from "../components/default-layout"
 import SEO from "../components/seo"
-import EmojiHeadingStack from '../components/emoji-heading-stack'
-import Quote from '../components/quote'
-import { Row, Col } from 'react-simple-flex-grid'
+import EmojiHeadingStack from "../components/emoji-heading-stack"
+import Quote from "../components/quote"
+import { Row, Col } from "react-simple-flex-grid"
 
 const Quotes = () => (
   <DefaultLayout className="article">
@@ -30,9 +30,9 @@ export default Quotes
 function buildQuotesFromCategories(categories) {
   return (
     <>
-      { buildCategoriesSelector(categories) }
-      <br/>
-      { buildQuotes(categories) }
+      {buildCategoriesSelector(categories)}
+      <br />
+      {buildQuotes(categories)}
     </>
   )
 }
@@ -41,10 +41,10 @@ function buildCategoriesSelector(categories) {
   let chunkedCategories = chunk(categories, 4)
 
   let rows = []
-  for (var row=0; row < chunkedCategories.length; row++) {
+  for (var row = 0; row < chunkedCategories.length; row++) {
     let cols = []
 
-    for (var col=0; col < chunkedCategories[row].length; col++) {
+    for (var col = 0; col < chunkedCategories[row].length; col++) {
       let colData = chunkedCategories[row][col]
 
       cols.push(
@@ -58,7 +58,7 @@ function buildCategoriesSelector(categories) {
       )
     }
 
-    rows.push(<Row key={row}>{ cols }</Row>)
+    rows.push(<Row key={row}>{cols}</Row>)
   }
   return rows
 }
@@ -66,41 +66,43 @@ function buildCategoriesSelector(categories) {
 function buildQuotes(categories) {
   let elements = []
 
-  for (var i=0; i < categories.length; i++) {
-    let category = categories[i];
+  for (var i = 0; i < categories.length; i++) {
+    let category = categories[i]
 
     elements.push(
       <h3 id={idify(category.name)}>
-        <a href={"#" + idify(category.name)}>{ category.name }</a>
+        <a href={"#" + idify(category.name)}>{category.name}</a>
       </h3>
     )
 
-    for (var j=0; j < category.quotes.length; j++) {
+    for (var j = 0; j < category.quotes.length; j++) {
       let quote = category.quotes[j]
       let id = "quote" + j + i
 
       elements.push(
-        <Quote key={id} id={id} author={quote.author}>{quote.quote}</Quote>
+        <Quote key={id} id={id} author={quote.author}>
+          {quote.quote}
+        </Quote>
       )
-      elements.push(<br/>)
+      elements.push(<br />)
     }
   }
   return elements
 }
 
 const quotesQuery = graphql`
-query {
-  allQuotesJson {
-    edges {
-      node {
-        emoji
-        name
-        quotes {
-          quote
-          author
+  query {
+    allQuotesJson {
+      edges {
+        node {
+          emoji
+          name
+          quotes {
+            quote
+            author
+          }
         }
       }
     }
   }
-}
 `

@@ -4,19 +4,18 @@ import React from "react"
 import styles from "./styles/vintage-quote.module.css"
 
 const VintageQuote = ({ author, children }) => (
-   <div className={ styles.vintage_quote }>
-      <p>{ children }</p>
-      <p>{ author }</p>
-   </div>
+  <div className={styles.vintage_quote}>
+    <p>{children}</p>
+    <p>{author}</p>
+  </div>
 )
 
 VintageQuote.propTypes = {
-  author:  PropTypes.string
+  author: PropTypes.string,
 }
 
 VintageQuote.defaultProps = {
-  author: ``
+  author: ``,
 }
-
 
 export default VintageQuote
