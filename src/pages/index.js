@@ -1,35 +1,60 @@
 import React from "react"
 
 import DefaultLayout from "../components/default-layout"
-import FancyHeading from '../components/fancy-heading'
-import Project from '../components/project'
-import SEO from '../components/seo'
-import EmojiHeadingStack from '../components/emoji-heading-stack'
-import { Row, Col } from 'react-simple-flex-grid';
-import { Twitter, Github, LinkedIn } from '../components/social-icons'
+import FancyHeading from "../components/fancy-heading"
+import Project from "../components/project"
+import SEO from "../components/seo"
+import EmojiHeadingStack from "../components/emoji-heading-stack"
+import { Row, Col } from "react-simple-flex-grid"
+import { Twitter, Github, LinkedIn } from "../components/social-icons"
 
 const IndexPage = () => (
   <DefaultLayout showHeader={false}>
-    <SEO title="Ozzie | Engineering Student"/>
+    <SEO title="Ozzie | Engineering Student" />
     <FancyHeading>
       <h1>Ozzie Kirkby</h1>
     </FancyHeading>
     <p className="subheading">About me</p>
-    <p>Hey there, I’m Ozzie <span role="img" aria-label="wave">👋</span> I’m a Mechanical Engineering student at Queen’s University. In the past, I’ve interned at <a className="lk-green" target="_bank" href="https://www.shopify.com/">Shopify</a> for both iOS and Software Engineering. Right now, I am interested in learning data engineering, backend services, and product development. Otherwise, you’ll find me running, <a className="lk-blue" href="books">reading</a> or taking <a className="lk-black" href="https://unsplash.com/@ozziek">photos</a>.</p>
+    <p>
+      Hey there, I’m Ozzie{" "}
+      <span role="img" aria-label="wave">
+        👋
+      </span>{" "}
+      I’m a Mechanical Engineering student at Queen’s University. In the past,
+      I’ve interned at{" "}
+      <a className="lk-green" target="_bank" href="https://www.shopify.com/">
+        Shopify
+      </a>{" "}
+      for both iOS and Software Engineering. Right now, I am interested in
+      learning data engineering, backend services, and product development.
+      Otherwise, you’ll find me running,{" "}
+      <a className="lk-blue" href="books">
+        reading
+      </a>{" "}
+      or taking{" "}
+      <a className="lk-black" href="https://unsplash.com/@ozziek">
+        photos
+      </a>
+      .
+    </p>
     <a href="resume.pdf">Resume</a>
     <br />
     <br />
     <br />
     <p className="subheading">Projects</p>
-    <p className="caption">Hackathon projects can be found on <a href="https://devpost.com/kirkbyo">Devpost</a></p>
+    <p className="caption">
+      Hackathon projects can be found on{" "}
+      <a href="https://devpost.com/kirkbyo">Devpost</a>
+    </p>
     <br />
     <Row>
       <Col xs={12} sm={6}>
         <Project
           title="Outflow"
+          discontinued={true}
           description="Manage the complexity of reacuring subscriptions. Instantly see where your money is going."
-          apple="https://itunes.apple.com/us/app/outflow-subscription-manager/id975011878"
           github="https://github.com/outflowapp"
+          website="http://outflowapp.com"
         />
       </Col>
       <Col xs={12} sm={6}>
@@ -56,10 +81,10 @@ const IndexPage = () => (
         />
       </Col>
     </Row>
-    <br/>
+    <br />
     <p className="subheading">Central Filing</p>
     <p className="caption">A filing cabinet for my thoughts.</p>
-    <br/>
+    <br />
     <Row>
       <Col xs={12} sm={6} md={4}>
         <EmojiHeadingStack
@@ -89,10 +114,10 @@ const IndexPage = () => (
     <footer>
       <div className="inline-stack social-icons">
         <Twitter height={`20px`} url="https://twitter.com/kirkbyo_" />
-        <Github height={`20px`} url="https://github.com/kirkbyo"/>
-        <LinkedIn height={`20px`} url="https://ca.linkedin.com/in/kirkbyo"/>
+        <Github height={`20px`} url="https://github.com/kirkbyo" />
+        <LinkedIn height={`20px`} url="https://ca.linkedin.com/in/kirkbyo" />
       </div>
-      <p>© { new Date().getFullYear() } Ozzie Kirkby</p>
+      <p>© {new Date().getFullYear()} Ozzie Kirkby</p>
     </footer>
   </DefaultLayout>
 )
