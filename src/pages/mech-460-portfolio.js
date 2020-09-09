@@ -19,13 +19,13 @@ const Quotes = () => (
     </FancyHeading>
     <Row>
       <Col sm={12}>
-        <Content />
+        <StaticQuery query={query} render={data => <Content data={data} />} />
       </Col>
     </Row>
   </DefaultLayout>
 )
 
-const Content = () => (
+const Content = ({ data }) => (
   <>
     <p className="subheading">About Me</p>
     <p>
@@ -59,12 +59,12 @@ const Content = () => (
       is a goal I am constantly looking to attain.
     </p>
     <div style={{ display: "flex" }}>
-      <SkillsTag name="Python" color="orange" />
-      <SkillsTag name="iOS development" color="orange" />
-      <SkillsTag name="MATLAB" color="orange" />
-      <SkillsTag name="Full-stack Software Development" color="orange" />
-      <SkillsTag name="MySql" color="orange" />
-      <SkillsTag name="Data Visualization" color="orange" />
+      <SkillsTag name="Python" color="blue" />
+      <SkillsTag name="iOS development" color="blue" />
+      <SkillsTag name="MATLAB" color="blue" />
+      <SkillsTag name="Full-stack Software Development" color="blue" />
+      <SkillsTag name="MySql" color="blue" />
+      <SkillsTag name="Data Visualization" color="blue" />
     </div>
     <p className="subheading">Internships</p>
     <Row>
@@ -153,14 +153,9 @@ const Content = () => (
         border: "1pt solid #e1e1e1",
       }}
     >
-      <StaticQuery
-        query={query}
-        render={data => (
-          <Img
-            key={"gear box render"}
-            fixed={data["GearBoxRendering"].childImageSharp.fixed}
-          />
-        )}
+      <Img
+        key={"gear box render"}
+        fixed={data["GearBoxRendering"].childImageSharp.fixed}
       />
     </div>
 
@@ -177,23 +172,13 @@ const Content = () => (
       safety during the winter.
     </p>
     <div className="image-figure">
-      <StaticQuery
-        query={query}
-        render={data => (
-          <Img
-            key={"ski render"}
-            fixed={data["SkiRendering"].childImageSharp.fixed}
-          />
-        )}
+      <Img
+        key={"ski render"}
+        fixed={data["SkiRendering"].childImageSharp.fixed}
       />
-      <StaticQuery
-        query={query}
-        render={data => (
-          <Img
-            key={"ski render"}
-            fixed={data["BikeRendering"].childImageSharp.fixed}
-          />
-        )}
+      <Img
+        key={"bike render"}
+        fixed={data["BikeRendering"].childImageSharp.fixed}
       />
     </div>
   </>

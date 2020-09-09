@@ -11,8 +11,8 @@
 }
 
 .blue {
-  background-color: rgba(119, 171, 237, 0.3);
-  border: 1px dashed rgba(119, 171, 237, 0.7);
+  background-color: rgba(119, 171, 237, 0.1);
+  border: 1px dashed rgba(119, 171, 237, 0.5);
 }
 
 .container span {

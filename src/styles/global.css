@@ -171,6 +171,7 @@ blockquote {
   border-radius: 8pt;
   overflow: hidden;
   border: 1pt solid #e1e1e1;
+  align-items: center;
 }
 
 @media screen and (max-width: 500px) {
