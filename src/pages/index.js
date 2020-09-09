@@ -63,25 +63,25 @@ const IndexPage = () => (
       </Col>
       <Col xs={12} sm={6}>
         <Project
-          title="BitLeague"
-          description="Developed apart of a team at QHacks19. Create, browse, and vote on community recreations of Bitmojis"
-          github="https://github.com/schmidyy/BitLeague"
+          title="SciSwift"
+          description="Naturally combine units of measurement with Swift code to ensure dimensionally homogenous calculations at compile time. "
+          github="https://github.com/kirkbyo/SciSwift"
         />
       </Col>
     </Row>
     <Row>
       <Col xs={12} sm={6}>
         <Project
-          title="Polydoxical"
-          description="WWDC 17 Playground Submission. Interactive playground to experiment with roulettes and polygons"
-          github="https://github.com/kirkbyo/Polydoxical"
+          title="BitLeague"
+          description="Developed apart of a team at QHacks19. Create, browse, and vote on community recreations of Bitmojis"
+          github="https://github.com/schmidyy/BitLeague"
         />
       </Col>
       <Col xs={12} sm={6}>
         <Project
-          title="Dimensional"
-          description="WWDC 18 Playground Submission. An experiment to naturally combine units of measurement with Swift code to ensure dimensionally homogenous calculations."
-          github="https://github.com/kirkbyo/WWDC18"
+          title="Polydoxical"
+          description="WWDC 17 Playground Submission. Interactive playground to experiment with roulettes and polygons"
+          github="https://github.com/kirkbyo/Polydoxical"
         />
       </Col>
     </Row>
