@@ -11,8 +11,8 @@ import Img from "gatsby-image"
 const Quotes = () => (
   <DefaultLayout showHeader={false} className="article">
     <SEO
-      title="MECH460/462 E-Portfolio"
-      description="E-Portfolio as part of the requirements for MECH 460/462"
+      title="MECH460/464 E-Portfolio"
+      description="E-Portfolio as part of the requirements for MECH 460/464"
     />
     <FancyHeading>
       <h1>Ozzie Kirkby</h1>
@@ -29,12 +29,12 @@ const Content = ({ data }) => (
   <>
     <p className="subheading">About Me</p>
     <p>
-      4th-year Mechanical Engineering student at Queen's University. I am
-      particularly interested in computer modelling, tools for learning, and the
-      intersection of biology and engineering. Outside of school, I have
-      acquired a wide breadth of programming experience, from building modern
-      web applications, to working on data pipelines, to launching iOS apps.
-      This has led me to internships at{" "}
+      I am 4th-year Mechanical Engineering student at Queen's University.
+      Currently, I am particularly interested in computer modelling, tools for
+      learning, and the intersection of biology and engineering. Outside of
+      school, I have acquired a wide breadth of programming experience, from
+      building modern web applications, to working on data pipelines, to
+      launching iOS apps. This has led me to internships at{" "}
       {
         <a className="lk-cb" target="_bank" href="https://www.coinbase.com/">
           Coinbase
@@ -46,17 +46,16 @@ const Content = ({ data }) => (
           Shopify
         </a>
       }{" "}
-      where I have had to opportunity to write code at scale. When I am not
+      where I have had the to opportunity to write code at scale. When I am not
       studying, I am either working on my side projects, learning Russian or
       running.
     </p>
     <p>
       As a person, I aim to be continuously curious, solution-oriented and a
       team-player at heart. I excel whenever I have the ability to intersect my
-      software engineering background with mechanical problems, creating unique
-      perspectives and potential solutions. However, I am actively working on
-      avoiding my tendency to over-engineer solutions. The beauty of simplicity
-      is a goal I am constantly looking to attain.
+      software engineering background with mechanical problems. In turn,
+      creating unique perspectives and potential solutions. However, I am
+      actively trying to avoid my tendency to over-engineer solutions.
     </p>
     <div style={{ display: "flex" }}>
       <SkillsTag name="Python" color="blue" />
@@ -135,7 +134,7 @@ const Content = ({ data }) => (
     <p>
       As part of the MECH 323 Machine Design course, we were divided into groups
       and tasked to design a gearbox for a remote-controlled car. The gearbox
-      designed by each of the groups were set to compete in top speed and hill
+      designed by each of the groups were set to compete in a top speed and hill
       competition to see who designed the best gearbox. Our group settled on a
       single-stage shifting gearbox to ensure adequate performance in each of
       the competitions. I was primarily responsible for modeling each of the
@@ -163,13 +162,13 @@ const Content = ({ data }) => (
     <p>
       Having transferred into the engineering faculty, I had the opportunity to
       participate in the transfer section for APSC 200 which aims to make up for
-      credits that typical first-year engineering students would typically
-      complete. We were divided into groups with students from other disciplines
-      and paired with a client from the community. My group was tasked with
-      improving the experience for a local bike-enthusiast who was experiencing
-      difficulties biking during the winter months. We designed and prototyped a
-      set of skis that can be attached to her bicycle, improving performance and
-      safety during the winter.
+      credits that a typical first-year engineering students would have already
+      completed. We were divided into groups with students from other
+      disciplines and paired with a client from the community. My group was
+      tasked with improving the experience for a local bike-enthusiast who was
+      experiencing difficulties biking during the winter months. We designed and
+      prototyped a set of skis that can be attached to her bicycle, improving
+      performance and safety during the winter.
     </p>
     <div className="image-figure">
       <Img
