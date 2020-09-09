@@ -1,0 +1,23 @@
+.container {
+  padding: 0 5pt;
+  margin: 4pt 0;
+  margin-right: 6pt;
+  border-radius: 4pt;
+}
+
+.orange {
+  background-color: rgba(236, 178, 45, 0.2);
+  border: 1px dashed rgba(236, 178, 45, 0.5);
+}
+
+.blue {
+  background-color: rgba(119, 171, 237, 0.3);
+  border: 1px dashed rgba(119, 171, 237, 0.7);
+}
+
+.container span {
+  color: rgba(85, 87, 89, 1.000);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 9pt;
+}
