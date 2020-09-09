@@ -1,0 +1,37 @@
+.heading {
+  display: flex;
+  align-items: baseline;
+}
+
+.heading h4 {
+  margin: 0;
+  margin-right: 8pt;
+}
+
+.heading i {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  border-radius: 8pt;
+  padding: 8pt;
+  margin-bottom: 8pt;
+  margin-right: 8pt;
+  box-sizing: border-box;
+}
+
+.container p {
+  font-size: 12pt;
+  margin-bottom: 6pt;
+}
+
+.container ul {
+  margin-bottom: 0;
+}
+
+.container ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+  margin: 0;
+  margin-bottom: 4pt;
+}

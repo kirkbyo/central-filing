@@ -164,3 +164,17 @@ blockquote {
 .books-summary-content li {
   font-family: 'Open Sans', sans-serif;
 }
+
+.image-figure {
+  display: flex;
+  background-color: #fafafa;
+  border-radius: 8pt;
+  overflow: hidden;
+  border: 1pt solid #e1e1e1;
+}
+
+@media screen and (max-width: 500px) {
+  .image-figure {
+    flex-wrap: wrap;
+  }
+}
