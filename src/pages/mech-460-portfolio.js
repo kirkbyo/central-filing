@@ -55,15 +55,26 @@ const Content = ({ data }) => (
       team-player at heart. I excel whenever I can intersect my software
       engineering background with mechanical problems. In turn, creating unique
       perspectives and potential solutions. However, I am actively trying to
-      avoid my tendency to over-engineer solutions.
+      avoid my tendency to over-engineer solutions. Moving forward, I have not
+      set my sails to a specific career, however, my ideal job would be to work
+      in a role where I can solve a wide set of problems and possibly apply my
+      mixed background of mechanical and software together.
+    </p>
+    <p>
+      <a href="mailto:16ok9@queensu.ca">Contact me</a>
     </p>
     <div style={{ display: "flex" }}>
       <SkillsTag name="Python" color="blue" />
       <SkillsTag name="iOS development" color="blue" />
       <SkillsTag name="MATLAB" color="blue" />
       <SkillsTag name="Full-stack Software Development" color="blue" />
-      <SkillsTag name="MySql" color="blue" />
+      <SkillsTag name="SQL" color="blue" />
       <SkillsTag name="Data Visualization" color="blue" />
+    </div>
+    <div style={{ display: "flex" }}>
+      <SkillsTag name="Clear communication" color="orange" />
+      <SkillsTag name="Project management" color="orange" />
+      <SkillsTag name="Positive energy" color="orange" />
     </div>
     <p className="subheading">Internships</p>
     <Row>
