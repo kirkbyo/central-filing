@@ -51,7 +51,7 @@ const Home: NextPage = () => {
         </ul>
       </header>
       <main className="flex flex-col h-full">
-        <div className="h-full table w-full md:w-3/4 mt-5 md:mt-0">
+        <div className="table w-full md:w-3/4 mt-5 md:mt-0" style={{ flexBasis: "100%" }}>
           <p className="text-xl table-cell align-middle">
             Hey there, I’m Ozzie{" "}
             <span role="img" aria-label="Wave">
