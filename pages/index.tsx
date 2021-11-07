@@ -1,5 +1,5 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import type { NextPage } from "next";
+import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
@@ -53,21 +53,21 @@ const Home: NextPage = () => {
       <main className="flex flex-col h-full">
         <div className="h-full table w-full md:w-3/4 mt-5 md:mt-0">
           <p className="text-xl table-cell align-middle">
-            Hey there, I’m Ozzie{' '}
+            Hey there, I’m Ozzie{" "}
             <span role="img" aria-label="Wave">
               👋
-            </span>{' '}
-            I currently do some software engineering at{' '}
+            </span>{" "}
+            I currently do some software engineering at{" "}
             <a href="https://www.coinbase.com" className="text-blue-800">
               Coinbase
             </a>
-            , but in the past I have also interned at{' '}
+            , but in the past I have also interned at{" "}
             <a href="https://www.shopify.com/" className="text-green-600">
               Shopify
             </a>
             . My undergrad was in Mechanical Engineering at Queen's University 🇨🇦, but right now I
             am interested in creating tools for learning and the decentralized web. I also enjoy
-            running, reading or taking{' '}
+            running, reading or taking{" "}
             <a href="https://unsplash.com/@ozziek" className="text-red-600">
               photos
             </a>
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
             <SectionTitle className="text-blue-600">
               <span className="mr-2" role="img" aria-label="Thinking">
                 🙇‍♂️
-              </span>{' '}
+              </span>{" "}
               Current Projects
             </SectionTitle>
             <ProjectSection>
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
             <SectionTitle className="text-red-800">
               <span className="mr-2" role="img" aria-label="Community">
                 🍄
-              </span>{' '}
+              </span>{" "}
               Open Source Work
             </SectionTitle>
             <ProjectSection href="https://github.com/andymatuschak/orbit">
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
             <SectionTitle className="text-gray-800">
               <span className="mr-2" role="img" aria-label="Sunset">
                 🌅
-              </span>{' '}
+              </span>{" "}
               Past Projects
             </SectionTitle>
             <ProjectSection href="https://zetro.co">
@@ -142,35 +142,35 @@ const Home: NextPage = () => {
 
       <footer></footer>
     </div>
-  )
-}
+  );
+};
 
 type ClassNameProp = {
-  className?: string
-}
+  className?: string;
+};
 
 const WorksSection: React.FC<ClassNameProp> = ({ children, className }) => (
   <div
     className={`transition duration-200 ease-in-out py-4 w-full md:w-1/3 bg-gradient-to-b filter drop-shadow-xl rounded-t-lg transform hover:-translate-y-1 hover:scale-105 md:translate-y-0 ${
-      className ?? ''
+      className ?? ""
     }`}
   >
     {children}
   </div>
-)
+);
 
 const SectionTitle: React.FC<ClassNameProp> = ({ children, className }) => (
-  <h2 className={`text-lg font-medium ${className ?? ''} px-4`}>{children}</h2>
-)
+  <h2 className={`text-lg font-medium ${className ?? ""} px-4`}>{children}</h2>
+);
 
 const ProjectSection: React.FC<{ href?: string }> = ({ children, href }) => (
   <div className="hover:bg-gray-50 hover:bg-opacity-40 my-2 mx-2 px-2 py-1 rounded-md">
     <a href={href}>{children}</a>
   </div>
-)
+);
 
 const ProjectTitle: React.FC = ({ children }) => (
   <h3 className="font-medium text-gray-800">{children}</h3>
-)
+);
 
-export default Home
+export default Home;
