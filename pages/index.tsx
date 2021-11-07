@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       <header>
         <ul className="flex space-x-3 justify-end py-2">
           <li>
-            <a href="https://twitter.com/kirkbyo_">
+            <a href="https://twitter.com/kirkbyo_" target="_blank" rel="noopener noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="text-purple-300"
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
             </a>
           </li>
           <li>
-            <a href="https://github.com/kirkbyo">
+            <a href="https://github.com/kirkbyo" target="_blank" rel="noopener noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="text-purple-300"
@@ -52,27 +52,44 @@ const Home: NextPage = () => {
       </header>
       <main className="flex flex-col h-full">
         <div className="table w-full md:w-3/4 mt-5 md:mt-0" style={{ flexBasis: "100%" }}>
-          <p className="text-xl table-cell align-middle">
-            Hey there, I’m Ozzie{" "}
-            <span role="img" aria-label="Wave">
-              👋
-            </span>{" "}
-            I currently do some software engineering at{" "}
-            <a href="https://www.coinbase.com" className="text-blue-800">
-              Coinbase
-            </a>
-            , but in the past I have also interned at{" "}
-            <a href="https://www.shopify.com/" className="text-green-600">
-              Shopify
-            </a>
-            . My undergrad was in Mechanical Engineering at Queen's University 🇨🇦, but right now I
-            am interested in creating tools for learning and the decentralized web. I also enjoy
-            running, reading or taking{" "}
-            <a href="https://unsplash.com/@ozziek" className="text-red-600">
-              photos
-            </a>
-            .
-          </p>
+          <div className="table-cell align-middle">
+            <p className="bg-white text-xl">
+              Hey there, I’m Ozzie.{" "}
+              <span role="img" aria-label="Wave">
+                👋
+              </span>{" "}
+              I currently do some software engineering at{" "}
+              <a
+                href="https://www.coinbase.com"
+                className="text-blue-800"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Coinbase
+              </a>
+              . In the past I have also interned at{" "}
+              <a
+                href="https://www.shopify.com/"
+                className="text-green-600"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Shopify
+              </a>
+              . My undergrad was in Mechanical Engineering at Queen's University 🇨🇦, but right now I
+              am interested in creating tools for learning and the decentralized web. I also enjoy
+              running, hiking, reading and taking{" "}
+              <a
+                href="https://unsplash.com/@ozziek"
+                className="text-red-600"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                photos
+              </a>
+              .
+            </p>
+          </div>
         </div>
 
         <section className="flex w-full md:space-x-5 flex-col md:flex-row mt-10 md:mt-0">
@@ -132,7 +149,7 @@ const Home: NextPage = () => {
             <ProjectSection href="http://outflowapp.com">
               <ProjectTitle>Outflow</ProjectTitle>
               <p className="text-sm text-gray-600">
-                Manage the complexity of reacuring subscriptions. Instantly see where your money is
+                Manage the complexity of recurring subscriptions. Instantly see where your money is
                 going.
               </p>
             </ProjectSection>
@@ -165,7 +182,9 @@ const SectionTitle: React.FC<ClassNameProp> = ({ children, className }) => (
 
 const ProjectSection: React.FC<{ href?: string }> = ({ children, href }) => (
   <div className="hover:bg-gray-50 hover:bg-opacity-40 my-2 mx-2 px-2 py-1 rounded-md">
-    <a href={href}>{children}</a>
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
   </div>
 );
 
