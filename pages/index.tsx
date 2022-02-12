@@ -54,31 +54,13 @@ const Home: NextPage = () => {
         <div className="table w-full md:w-3/4 mt-5 md:mt-0" style={{ flexBasis: "100%" }}>
           <div className="table-cell align-middle">
             <p className="bg-white text-xl">
-              Hey there, I’m Ozzie.{" "}
+              Hey there, I’m Ozzie{" "}
               <span role="img" aria-label="Wave">
                 👋
-              </span>{" "}
-              I currently do some software engineering at{" "}
-              <a
-                href="https://www.coinbase.com"
-                className="text-blue-800"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Coinbase
-              </a>
-              . In the past I have also interned at{" "}
-              <a
-                href="https://www.shopify.com/"
-                className="text-green-600"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Shopify
-              </a>
-              . My undergrad was in Mechanical Engineering at Queen's University 🇨🇦, but right now I
-              am interested in creating tools for learning and the decentralized web. I also enjoy
-              running, hiking, reading and taking{" "}
+              </span>
+              . I like building things. My undergrad was in Mechanical Engineering at Queen's
+              University, but right now I am interested in creating tools for learning, cities, and
+              the decentralized web. I also enjoy running, hiking, reading and taking{" "}
               <a
                 href="https://unsplash.com/@ozziek"
                 className="text-red-600"
@@ -156,7 +138,6 @@ const Home: NextPage = () => {
           </WorksSection>
         </section>
       </main>
-
       <footer></footer>
     </div>
   );
